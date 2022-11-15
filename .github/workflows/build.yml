@@ -19,7 +19,7 @@ jobs:
       uses: cbuschka/setup-tfvm@v1
 
     - name: write .terraform-version file
-      run: echo "v0.14.3" > .terraform-version
+      run: echo "v1.3.4" > .terraform-version
 
     - name: run tfvm
       run: tfvm info
