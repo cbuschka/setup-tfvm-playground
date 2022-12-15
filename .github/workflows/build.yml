@@ -20,7 +20,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: setup tfvm
-      uses: cbuschka/setup-tfvm@83227a789f9e29d90a218bf8d20c9d8cde9b8b5a
+      uses: cbuschka/setup-tfvm@e9ff5d3b873c224c56b983364645831b85ff7ce2
       env:
         ACTIONS_STEP_DEBUG: true
 
