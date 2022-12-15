@@ -3,6 +3,10 @@ name: 'build'
 on:
   push:
 
+env:
+  ACTIONS_STEP_DEBUG: true
+
+
 jobs:
   test:
     name: Test
@@ -17,6 +21,8 @@ jobs:
 
     - name: setup tfvm
       uses: cbuschka/setup-tfvm@11_conni_fails_randomly
+      env:
+        ACTIONS_STEP_DEBUG: true
 
     - name: write .terraform-version file
       run: echo "v1.3.4" > .terraform-version
