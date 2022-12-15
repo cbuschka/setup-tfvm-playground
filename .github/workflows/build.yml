@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: setup tfvm
-      uses: cbuschka/setup-tfvm@v1.0.1
+      uses: cbuschka/setup-tfvm@11_conni_fails_randomly
 
     - name: write .terraform-version file
       run: echo "v1.3.4" > .terraform-version
