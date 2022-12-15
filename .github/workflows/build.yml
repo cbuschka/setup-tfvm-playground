@@ -20,7 +20,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: setup tfvm
-      uses: cbuschka/setup-tfvm@11_conni_fails_randomly
+      uses: cbuschka/setup-tfvm@83227a789f9e29d90a218bf8d20c9d8cde9b8b5a
       env:
         ACTIONS_STEP_DEBUG: true
 
